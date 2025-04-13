@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie_Land API</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h1>Now Playing Movies </h1>
+    <div class="input">
+        <input type="text" placeholder="get Movies by word...">
+        <input type="search" placeholder="search by rate">
+    </div>
+    <div class="menu">
+        <ul>
+            <li onclick="getMovies('now_playing')">Now Playing</li>
+            <li onclick="getMovies('top_rated')">Top Rated</li>
+            <li onclick="getMovies('upcoming')">UP Coming</li>
+            <li onclick="getMovies('popular')">Popular</li>
+        </ul>
+    </div>
+ 
+    <section class="allMovies" id="content"></section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
